@@ -262,6 +262,22 @@ main {
   border-bottom-left-radius: 50px;
 }
 
+footer {
+  font-family: "Barlow Condensed", sans-serif;
+  position: absolute;
+  bottom: 20px;
+}
+footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5b5f71;
+  font-size: 1.3rem;
+  transition: all 0.4s;
+}
+footer a:hover, footer a:visited {
+  color: #242942;
+}
+
 @media screen and (min-width: 1000px) {
   body {
     padding: 30px 150px 0 70px;

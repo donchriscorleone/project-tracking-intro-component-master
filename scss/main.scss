@@ -56,6 +56,24 @@ main {
     // }
 }
 
+footer {
+    font-family: $barlow-condensed;
+    position: absolute;
+    bottom: 20px;
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $dark-grayish-blue;
+        font-size: 1.3rem;
+        transition: all .4s;
+
+        &:hover, &:visited {
+            color: $very-dark-blue;
+        }
+    }
+}
+
 @media screen and (min-width: 1000px) {
     body {
         padding: 30px 150px 0 70px;
