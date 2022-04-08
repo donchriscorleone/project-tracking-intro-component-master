@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+.btn {
+    padding: 15px 10px;
+    font-family: $barlow-condensed;
+    text-transform: uppercase;
+    outline: none;
+    border-style: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-orange {
+    background-color: $red;
+    color: $light-grayish-blue;
+    transition: opacity .3s;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.chip {
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: $light-grayish-blue;
+    background-color: $very-dark-blue;
+    font-family: $barlow-condensed;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.btn-nav {
+    padding: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+
+.btn-nav-hide {
+    display: none;
+}
+
+.btn-menu {
+    background-image: url('./../images/icon-hamburger.svg');
+}
+
+.btn-close {
+    background-image: url('./../images/icon-close.svg');
+}

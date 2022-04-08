@@ -1,0 +1,71 @@
+@import './variables.scss';
+
+.list {
+    display: flex;
+    list-style: none;
+    column-gap: 10px;
+    font-family: $barlow-condensed;
+}
+
+.list-nav {
+    column-gap: 30px;
+    min-width: 400px;
+}
+
+.list-hide {
+    display: none;
+}
+
+.list__item {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.list__item-login {
+    margin-left: auto;
+}
+
+.list__item-link {
+    text-decoration: none;
+    color: $very-dark-blue;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.list__item-link.login {
+    color: $dark-grayish-blue;
+}
+
+.modal.list {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px rgba($color: #000000, $alpha: .3);
+
+    .list__item {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .list__item-login {
+        margin-left: initial;
+        border-top: 1px solid $light-grayish-blue;
+    }
+
+    .list__item-link {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .list__item-link {
+        font-size: 1.9rem;
+    }
+}
